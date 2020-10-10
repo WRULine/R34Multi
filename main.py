@@ -17,6 +17,7 @@ if threadcount == 0:
 
 def download(URL, md5, out, rule34=None):
     global threadcounter
+    URL = URL[:21] + "/" + URL[21:] #Patch URL
     print("{} at {} started".format(md5, t.time()))
     myfile = requests.get(URL)
     open(output+ "/" + md5+"."+URL.split(".")[3], 'wb').write(myfile.content)
