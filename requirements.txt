@@ -1,0 +1,5 @@
+easygui==0.98.1
+requests==2.18.4
+rule34==1.7.4
+eel==0.14.0
+PyInstaller==4.0
